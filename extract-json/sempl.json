@@ -1,0 +1,57 @@
+{
+    "-L-cQdbBqhOky5u6Ms_U": {
+        "details": {
+            "partnershipType": "product",
+            "partnershipUID": "-L-bdjr6Ojw-x5N5OYTr"
+        },
+        "messages": {
+            "-L-cQdbBqhOky5u6Ms_V": {
+                "sender": "sdfmYP5ChScU6LGQaGhp0S8n2Cs2",
+                "text": "Congratulations! You have been chosen to receive Loloi Javari JV-08 Area Rug for RugStudio  in exchange for a creative post about the product. We'll ship the product soon. Please remember to follow the guidelines of the product post and respond here with any questions!",
+                "timestamp": "2017-12-05 14:47:05 -0600"
+            },
+            "-L-cRXFgutKrMTnlmh4a": {
+                "sender": "sdfmYP5ChScU6LGQaGhp0S8n2Cs2",
+                "text": "Hello there! ",
+                "timestamp": "2017-12-05 14:50:57 -0600"
+            },
+            "-L-cS3KyIfpBwIiY8SOD": {
+                "sender": "sdfmYP5ChScU6LGQaGhp0S8n2Cs2",
+                "text": "What size were you interested in? We can sell it to you at a very deep discount, or ship you one for free though we would need it returned, or dropped off at our Austin store. Let me know, thanks!",
+                "timestamp": "2017-12-05 14:53:16 -0600"
+            },
+            "-L-d-FJ2YpJdDQXaYixK": {
+                "sender": "3ut3nxVzbaedTTQBoqtT2ALX2q82",
+                "text": "Hello! ",
+                "timestamp": "2017-12-05 17:27:00 -0600"
+            },
+            "-L-d-YcOXu-TgIQdZ0aR": {
+                "sender": "3ut3nxVzbaedTTQBoqtT2ALX2q82",
+                "text": "Thanks for accepting me 😁. I don't think the rental option would work well for me, as it's a bit of hassle and my days are pretty busy. Would you mind explaining the discount? Thanks ",
+                "timestamp": "2017-12-05 17:28:20 -0600"
+            },
+            "-L-d4PE4fj1WVcT4MS3U": {
+                "sender": "sdfmYP5ChScU6LGQaGhp0S8n2Cs2",
+                "text": "You're welcome, thank you for applying! \n\nWe completely understand about returning the rug. For the discount option it would depend on the size you want. Take the 8x10 (7'10''x10') for example; we sell that for $899 on the site. The discount we can offer for that size would be about 50% and would bring the final price to $425. ",
+                "timestamp": "2017-12-05 17:49:32 -0600"
+            },
+            "-L-dMlAIedyPkt3yF9xa": {
+                "sender": "3ut3nxVzbaedTTQBoqtT2ALX2q82",
+                "text": "Ohh I see. I think that's a bit too expensive for me right now, but I appreciate it! Beautiful rug 😁",
+                "timestamp": "2017-12-05 19:09:44 -0600"
+            }
+        },
+        "users": {
+            "3ut3nxVzbaedTTQBoqtT2ALX2q82": {
+                "hasUnread": false,
+                "name": "cavlife",
+                "type": "influencer"
+            },
+            "sdfmYP5ChScU6LGQaGhp0S8n2Cs2": {
+                "hasUnread": false,
+                "name": "RugStudio ",
+                "type": "brand"
+            }
+        }
+    }
+}
