@@ -8,19 +8,33 @@ function flatten(arr) {
 }
 
 function arrOfKeys(obj) {
-    return Object.keys(obj)
+    return Object.keys(obj).filter(( element ) => {
+       if (element != 'null' && element !== 'undefined' && element !== "") {
+          return element;
+        }
+    })
 }
 
-function filterArrOfObj(arr, obj) {
-    return arr.map(key => {
+
+function filterDataToUnreadMessages(arr,obj) {
+    let arrEl = [];
+    arr.map(key => {
         if (obj.hasOwnProperty(key)) {
-            let newArr = arrOfKeys(obj[key].users) 
-            return newArr
+            if (obj[key].users) {
+               let newArr = arrOfKeys(obj[key].users) 
+               newArr.forEach((element) => {
+                if (obj[key].users[element].hasUnread === true) {
+                     arrEl.push(obj[key]);
+                }
+            }) 
+            }
         }
     });
+    return arrEl;
 }
-
-fs.readFile('./sempl.json', "utf8", (err, jsonString) => {
+// './messages-export.json'
+// './sempl.json'
+fs.readFile('./messages-export.json', "utf8", (err, jsonString) => {
   if (err) {
     console.log("Error reading file from disk:", err);
     return;
@@ -29,27 +43,8 @@ fs.readFile('./sempl.json', "utf8", (err, jsonString) => {
     const messagesObj = JSON.parse(jsonString); 
     const arrMessageObjKeys = arrOfKeys(messagesObj)
       
-    console.log("Messages:", arrMessageObjKeys);
-      console.log(arrMessageObjKeys.map(key => messagesObj.hasOwnProperty(key) ? messagesObj[key].users : "none")) 
-      console.log("test: ", flatten(filterArrOfObj(arrMessageObjKeys,messagesObj)))
+    console.log("test: ", filterDataToUnreadMessages(arrMessageObjKeys,messagesObj))
   } catch (err) {
     console.log("Error parsing JSON string:", err);
   }
 });
-
-
-
-// fs.readFile('./messages-export.json', "utf8", (err, jsonString) => {
-//   if (err) {
-//     console.log("Error reading file from disk:", err);
-//     return;
-//   }
-//   try {
-//     const message = JSON.parse(jsonString); 
-//     console.log("BigMessages:", Object.keys(message));
-      
-//   } catch (err) {
-//     console.log("Error parsing JSON string:", err);
-//   }
-// });
-
