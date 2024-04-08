@@ -3,6 +3,24 @@ function analyzeProductSales(productData) {
     let bestSellingProductId = '';
     let highestSales = 0;
 
+//     const productData = {
+//     "p001": {
+//         name: "Product 1",
+//         price: 20,
+//         monthlySales: [30, 25, 40, 20, 10]
+//     },
+//     "p002": {
+//         name: "Product 2",
+//         price: 15,
+//         monthlySales: [35, 20, 45, 17, 33]
+//     },
+//     "p003": {
+//         name: "Product 3",
+//         price: 25,
+//         monthlySales: [10, 12, 10, 11, 12]
+//     }
+// };
+
     for (let id in productData) {
         if (productData.hasOwnProperty(id)) {
             const product = productData[id];
