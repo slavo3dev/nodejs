@@ -1,0 +1,105 @@
+.test-class {
+    /* background-image: url('https://www.apple.com/v/home/bm/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_medium.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 617px;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: absolute;
+    width: 100%;
+    height: 617px;
+    background-image: url('https://www.apple.com/v/home/bm/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_medium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    }
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 617px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*it looks like that background picture is not responsive when changing the screen size,question for Slavko/Nikola*/
+
+.headingone {
+    z-index: 3;
+    color: white;
+    font-family: sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    border: 3px;
+    border-color: antiquewhite;
+    
+    /*question why border line doesn't show up on page, this was only test*/
+  
+}
+/* had to use -margin to decrease space around text, there is h2 tag that has large margin size, don't understand why??*/
+h2 {
+    margin-bottom: 5%;
+}
+
+.titanium{
+    z-index: 3;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    
+}
+
+.probtn {
+    z-index: 3;
+
+}
+
+.learnmore-btn  {
+     z-index: 3;
+    font-size: 17px;
+    background-color: #037df8; 
+    color: white;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border: 1px; 
+    border-color: white;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.pro-btn {
+    z-index: 3;
+    font-size: 17px;
+    text-align: center;
+    background-color: black;
+    color:#037df8;
+    border-color: #037df8;
+    border-radius: 25%;
+    border: 1px;
+    border-style: solid;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 13px;
+
+}
+.Learnmore-pro a {
+    text-decoration: none;
+    color: white;
+}
+.Pro-buy a {
+    text-decoration: none;
+    color: blue;
+}
